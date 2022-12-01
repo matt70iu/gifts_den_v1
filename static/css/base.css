@@ -27,6 +27,10 @@ body {
     width: fit-content;
 }
 
+.dropdown-item {
+    color: red;
+}
+
 .shop-now-button {
     background: red;
     color: white;
