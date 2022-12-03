@@ -39,17 +39,23 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
+.btn-red {
     background: red;
     color: white;
+}
+
+.btn-outline-red {
+    background: white;
+    color: red !important; /* Override link colours for <a> elements */
+    border: 1px solid red;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
     background:red;
     color: white;
 }
