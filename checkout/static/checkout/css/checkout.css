@@ -32,6 +32,6 @@
 
 #payment-form .form-control,
 #card-element {
-    color:red;
-    border: 1px solid red;
+    color:black;
+    border: 1px solid black;
 }
