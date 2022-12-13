@@ -27,7 +27,6 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Street Address 2',
             'county': 'County',
         }
-        
 
         self.fields['first_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
