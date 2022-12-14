@@ -19,7 +19,7 @@ class UserProfile(models.Model):
     default_date_of_birth = models.DateField(
         max_length=8, null=True, blank=True)
     default_country = CountryField(
-        blank_label='Country *', null=True, blank=True)
+        blank_label='Country', null=True, blank=True)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
     default_town_or_city = models.CharField(
         max_length=40, null=True, blank=True)
