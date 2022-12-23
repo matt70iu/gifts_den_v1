@@ -1,0 +1,1 @@
+web: gunicorn gifts_den.wsgi:application
