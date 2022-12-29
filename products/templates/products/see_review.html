@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<h2>Reviews:</h2>
+{% if not product.reviews.all %}
+    <p>No Reviews yet...<a href="#">Write a review...</a></p>
+  <strong>  {% for review in product.reviews.all %}
+    {{ review.name }} - {{ comment.date_added }}</strong>
+    <br/>
+    {{ review.body }}
+    {% endfor %}
+{% endif %}
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}
