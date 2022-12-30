@@ -27,7 +27,7 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         ''' Add review fields'''
         model = Review
-        fields = ('name', 'body', 'body')
+        fields = ('name', 'body')
 
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),

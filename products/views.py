@@ -149,13 +149,14 @@ def delete_product(request, product_id):
 class Add_Review_View(CreateView):
     '''Renders new review page'''
     model = Review
+    form_class = ReviewForm
     template_name = 'products/add_review.html'
-    fields = '__all__'
+    success_url = reverse_lazy('home')
 
-    # def form_valid(self, form):
-    #     form.instance.product_id = self.kwargs['pk=']
-    #     messages.add_message(self.request, messages.INFO,
-    #                          'review added successfully')
-    #     return super().form_valid(form)
+    def form_valid(self, form):
+        form.instance.product_id = self.kwargs['product_id']
+        messages.add_message(self.request, messages.INFO,
+                             'Review added successfully!')
+        return super().form_valid(form)
 
-    # success_url = reverse_lazy('home')
+    success_url = reverse_lazy('home')
