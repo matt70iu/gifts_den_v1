@@ -5,9 +5,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Review
 
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -144,3 +144,18 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted successfully!')
     return redirect(reverse('products'))
+
+
+class Add_Review_View(CreateView):
+    '''Renders new review page'''
+    model = Review
+    template_name = 'products/add_review.html'
+    fields = '__all__'
+
+    # def form_valid(self, form):
+    #     form.instance.product_id = self.kwargs['pk=']
+    #     messages.add_message(self.request, messages.INFO,
+    #                          'review added successfully')
+    #     return super().form_valid(form)
+
+    # success_url = reverse_lazy('home')
