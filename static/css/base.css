@@ -335,3 +335,9 @@ input[name='q']::placeholder {
 .increment-qty, .decrement-qty {
     padding: 0.25rem .5rem !important;
 }
+
+.review-list {
+    height: 200px;
+    width: 600px;
+    overflow: scroll;
+}
