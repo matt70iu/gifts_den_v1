@@ -14,7 +14,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=Category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -37,10 +37,10 @@
                 Electrical
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts-for-her-link">
-                <a href="{% url 'products' %}?Category=Kitchen" class="dropdown-item">Electrical</a>
-                <a href="{% url 'products' %}?Category=Bedroom" class="dropdown-item">Outdoor</a>
-                <a href="{% url 'products' %}?Category=Living Room" class="dropdown-item">Clothing</a>
-                <a href="{% url 'products' %}?Category=Others" class="dropdown-item">Others</a>
+                <a href="{% url 'products' %}?Category=Portable Speakers" class="dropdown-item">Portable Speakers</a>
+                <a href="{% url 'products' %}?Category=Headphones" class="dropdown-item">Headphones</a>
+                <a href="{% url 'products' %}?Category=Kitchen" class="dropdown-item">Kitchen</a>
+                <a href="{% url 'products' %}?Category=Others" class="dropdown-item">Living</a>
             </div>
         </li>
 
