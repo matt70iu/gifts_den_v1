@@ -275,6 +275,9 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+#account-text {
+    color: grey !important;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
