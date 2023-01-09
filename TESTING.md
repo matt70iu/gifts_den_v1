@@ -77,8 +77,51 @@ When testing this feature, I did the following:
 
 ![registration-success-new-user](media/screenshots/login-success-new-registration.png)
 
+## Make a Purchase
 
+The expexted result of this test is that, a user will be able to make a purchase on the site and they will receive a confirmation email to confirm their order has been received.
 
+When testing this feature, I did the following:
+
+![select-clothing](media/screenshots/select_clothing.png)
+ 
+ - Clicked on clothing and selected shirts.
+
+ ![shirts](media/screenshots/select_shirts.png)
+
+ - I then selected shirts.
+
+ ![t-shirt-1](media/screenshots/t-shirt-1.png)
+
+ - I then selected the first shirt and was presented with the relevent product detail page.
+
+ ![t-shirt-product-detail](media/screenshots/t-shirt-product-detail.png)
+
+ ![add-t-shirt-to-bag](media/screenshots/add_shirt_to_bag.png)
+
+ - I then added the shirt to my shopping and selected go to checkout.
+
+ ![t-shirt-in-shopping-bag](media/screenshots/t-shirt-in-shopping-bag.png)
+
+ - I was then presented with the shopping bag containing the shirt.
+
+ - I then clicked on secure checkout.
+
+ ![checkout-screen](media/screenshots/checkout_screen_1.png)
+
+ - I was then presented with the checkout screen and filled out some information for testing purposes.
+
+ ![complete-order](media/screenshots/complete-order-1.png)
+
+ - I then clicked on complete order and was presented with the order success page as expected.
+
+ ![confirmation-email](media/screenshots/confirmation-email-1.png)
+
+ - I also received a confirmation email for the order as expected.
+
+ - I did have to make a change the logic in the order model within the checkout app, due to duplicate orders being generated with two last names instead of first and last names.
+
+ - I removed the first_name and last_name logic and replaced with full_name on the model, views, forms and templates as needed and the app is now behaving as expected.
 
 
 
