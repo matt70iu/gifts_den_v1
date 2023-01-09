@@ -39,8 +39,7 @@ def checkout(request):
         bag = request.session.get('bag', {})
 
         form_data = {
-            'first_name': request.POST['first_name'],
-            'last_name': request.POST['last_name'],
+            'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
             'country': request.POST['country'],
@@ -89,7 +88,7 @@ def checkout(request):
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
-            print(order_form.errors)
+
     else:
         bag = request.session.get('bag', {})
         if not bag:
@@ -110,8 +109,7 @@ def checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'first_name': profile.user.first_name,
-                    'last_name': profile.user.last_name,
+                    'full_name': profile.user.full_name,
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
                     'country': profile.default_country,

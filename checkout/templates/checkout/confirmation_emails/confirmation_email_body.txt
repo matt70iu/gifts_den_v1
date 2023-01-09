@@ -1,4 +1,4 @@
-Hello {{ order.first_name }}!
+Hello {{ order.full_name }}!
 
 This is a confirmation of your order at Gifts Den. Your order information is below: 
 

@@ -13,9 +13,8 @@ from profiles.models import UserProfile
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
-        UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
-    first_name = models.CharField(max_length=50, null=False, blank=False)
-    last_name = models.CharField(max_length=50, null=False, blank=False)
+    UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
+    full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     country = CountryField(blank_label='Country *', null=False, blank=False)
@@ -61,6 +60,7 @@ class Order(models.Model):
         Override the original save method to set the order number
         if it has not been already set.
         """
+        print("Order Saved")
         if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
