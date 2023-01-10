@@ -176,7 +176,7 @@ The app behaved as expected during this test.
 
 ## View/edit my profile and view order history
 
-The prrpose of this test is to confirm that as a logged in and registered user, I can view and edit my profile information and also see my order history.
+The expected of this test is to confirm that as a logged in and registered user, I can view and edit my profile information and also see my order history.
 
 To perform this test, I did the following:
 
@@ -225,6 +225,88 @@ To complete this test, I did the following:
 ![see-test-review](media/screenshots/see-test-review.png)
 
 - I was then able to view my test review as expected. One observation I made from this test however, was perhaps it would be better for user experience to redirect to the product detail page for the product they left the review on. Will look at this for future development.
+
+
+## Add new product to store
+
+The expected result of this test will be that a logged in super user will be able to add a product to the store without the need to use the django admin panel.
+
+To carry out this test I did the following:
+
+![logged-in-as-superuser](media/screenshots/sign-in-success.png)
+
+- I confirmed I was signed in as a superuser.
+
+![select-product-management](media/screenshots/select-product-management.png)
+
+- I next selected product management from the my account menu.
+
+![product-management-page-1](media/screenshots/product-management-screen-1.png)
+
+![product-management-page-2](media/screenshots/fill-out-product-management-2.png)
+
+- I was then greeted with the project management screen allowing me to add a test product with no image.
+
+![fill-out-product-management-1](media/screenshots/fill-out-product-management-1.png)
+
+![fill-out-product-management-2](media/screenshots/fill-out-product-management-2.png)
+
+- With all my test info filled out, I selected add product.
+
+![product-added-success](media/screenshots/product-added-success-1.png)
+
+- I was then brought to the product detail page for this newly added product, along with a message confirming the product had been added succesfully.
+
+![success-others-category](media/screenshots/success-others-category.png)
+
+- I can also confirm that the newly added product came up with the vasious category filters when selected.
+
+## Edit newly added product
+
+The expected result of this test is that our super user will be able to edit a product in the store.
+
+I tested this by doing the following:
+
+![added-product-detail-page](media/screenshots/product-added-success-1.png)
+
+- I selected the product I added in the previous test and was brought to it's product detail page.
+
+![select-edit-product](media/screenshots/select-edit-delete-product.png)
+
+- I then clicked on the edit option beside the product image.
+
+![edit-test-product](media/screenshots/edit-test-product.png)
+
+- I then changed the sku and product name and clicked update product.
+
+![update-product-success](media/screenshots/update-product-success.png)
+
+I was then brought back to the product detail screen and observed that the product name had updated as expected.
+
+## Delete newly added product
+
+The expected result of this test will be that a super user will be able to delete our newly added product from our store.
+
+I completed this test by doing the following:
+
+![delete-test-product](media/screenshots/update-product-success.png)
+
+![select-delete-product](media/screenshots/select-edit-delete-product.png)
+
+- From the product detail page of our test product, I this time selected delete product.
+
+![product-deleted-success](media/screenshots/product-deleted-success.png)
+
+- I was then brought to the all products page with a message confirming that the product had been deleted.
+
+- I was also able to confim this by selecting the others category and could see that our test product was no longer displayed.
+
+
+
+
+
+
+
 
 
 
