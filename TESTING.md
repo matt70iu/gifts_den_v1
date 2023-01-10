@@ -198,6 +198,36 @@ To perform this test, I did the following:
 
 ## Review a product
 
+The purpose of this test is to confirm a user, weather logged in or not, can leave a review on a product and that the review is then visable to others. I would also want to confirm that the "no reviews yet...add one" text disappears once a review is added.
+
+To complete this test, I did the following:
+
+![select-jeans](media/screenshots/select-jeans.png)
+
+- Clicked on clothing while not logged in the selected jeans.
+
+![jeans-filtered](media/screenshots/jeans-filtered.png)
+
+- I was then presented with the filtered jeans category page and selected the first pair.
+
+![jeans-product-detail-review](media/screenshots/jeans-product-detail-review.png)
+
+- I was then greeted with the product detail page for these jeans and selected add review.
+
+![add-review-page](media/screenshots/product-review-page.png)
+
+- I was then presented with the product review page, typed my test review and clicked on add review.
+
+![test-review-success](media/screenshots/review-added-successfully.png)
+
+- I was then redirected back to the home page with the review success message.
+
+![see-test-review](media/screenshots/see-test-review.png)
+
+- I was then able to view my test review as expected. One observation I made from this test however, was perhaps it would be better for user experience to redirect to the product detail page for the product they left the review on. Will look at this for future development.
+
+
+
 
 
 
