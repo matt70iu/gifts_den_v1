@@ -124,6 +124,85 @@ When testing this feature, I did the following:
  - I removed the first_name and last_name logic and replaced with full_name on the model, views, forms and templates as needed and the app is now behaving as expected.
 
 
+ ## Make a purchase as a previously registered user
+
+ The expected result of this test is that when a previously registered user logs in, they would be able to make a purchase with their profile information prepopulated on the checkout page.
+
+ When testing this feature I did the following:
+
+ ![Login-page-credentials-entered](media/screenshots/login-page-crednetials-entered.png)
+
+ - Entered my correct credentials and clicked login.
+
+ ![sign-in-success](media/screenshots/sign-in-success.png)
+
+ - I was then greeted with the sign in success message on the home page.
+
+ ![select-electrical](media/screenshots/select-electrical.png)
+
+ - I then selected electrical and selected headphones.
+
+ ![headphones-filtered](media/screenshots/headphones-filtered.png)
+
+ - I was then presented with a list of all the headphone products and selected the first.
+
+ ![headphones-product-detail](media/screenshots/headphones-product-detail.png)
+
+- I was then presented with the product detail page for these headphones.
+
+![headphones-added-to-bag](media/screenshots/headphones-add-to-bag-success.png)
+
+- I added these to my shopping bag and was then greeted with the success meesage advising the headphones had been added to my shopping bag successfully.
+
+![shopping-bag-headphones](media/screenshots/shopping-bag-headphones.png)
+
+- Then clickaed go to checkout and the headphones were in my shopping bag.
+
+![headphones-checkout-prepopulated](media/screenshots/headphones-checkout-prepopulated.png)
+
+- I was then presented with the checkout page which had all my test profile information populated with the exception of the full name, which is correct as per app logic.
+
+![order-success-headphones](media/screenshots/order-success-headphones.png)
+
+- I filled out my name, completed the order and was greeted with the order success page.
+
+![confirmation-email-gmail](media/screenshots/confirmation-email-gmailpng.png)
+
+![confirmation-email-development](media/screenshots/confirmation-email-development.png)
+
+- I was also sent a confirmation to both my gmail account and the development terminal as per current environment variables.
+
+The app behaved as expected during this test.
+
+## View/edit my profile and view order history
+
+The prrpose of this test is to confirm that as a logged in and registered user, I can view and edit my profile information and also see my order history.
+
+To perform this test, I did the following:
+
+![select-profile](media/screenshots/click-on-profilepng.png)
+
+- While logged in, I clicked on my account and then selected my profile.
+
+![profile-order-history-page](media/screenshots/profile-order-history.png)
+
+- I was then presented with my profile page, as well as my order history. 
+
+- The order history did not present in chronalogical order however, so I wull look at this in future development.
+
+![profile-edit-test](media/screenshots/profile-edit-test.png)
+
+- I then added my date of birth and changed my country to Ireland and was greeted with a success message confirming my profile had been updated.
+
+- Another observation on this test is the fact that the date of birth saved in US format, which again, is an area that I will look at for furure development.
+
+## Review a product
+
+
+
+
+
+
 
 
 
