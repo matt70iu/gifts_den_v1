@@ -81,22 +81,12 @@
 
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <p class="mb-0 font-weight-bold">First Name</p>
+                        <p class="mb-0 font-weight-bold">Full Name</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
                         <p class="mb-0">{{ order.full_name }}</p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p class="mb-0 font-weight-bold">Last Name</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.full_name }}</p>
-                    </div>
-                </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 font-weight-bold">Address 1</p>
@@ -211,12 +201,12 @@
                 <span class="text-uppercase">Back to Profile</span>
             </a>
             {% else %}
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-red rounded-0 my-2">
-                    <span class="icon mr-2">
-                        <i class="fas fa-gifts"></i>
-                    </span>
-                    <span class="text-uppercase">Now check out the latest deals!</span>
-                </a>
+            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-red rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-gifts"></i>
+                </span>
+                <span class="text-uppercase">Now check out the latest deals!</span>
+            </a>
             {% endif %}
         </div>
     </div>
