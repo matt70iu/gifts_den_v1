@@ -86,6 +86,38 @@ Products consisting of:
 
 - I also added a date of birth field to the Userprofile model as I believe this will be useful in terms of any age restricted products that may be sold on the store in the future.
 
+## Features
+
+On the home page the user can:
+
+![Home-page](media/screenshots/home-page.png)
+
+- Search the site
+- Login/out or register
+- Select some products to view from the the top navbar or from the shop now button
+
+Assuming our user is a new customer
+
+![select-register](media/screenshots/click-register.png)
+
+- We will click on register.
+
+![registration-screen](media/screenshots/sign-up-corrected.png)
+
+- We are then brought to the resigistration screen to fill out our details.
+
+![registration-2](media/screenshots/registration-screen-2png.png)
+
+- Once the user has filled out their details, they will click on the sign up button.
+
+![registration-success](media/screenshots/register-success.png)
+
+- They will then be brought back to the homepage and presented with a success message confirming successful registration.
+
+
+
+
+
 
 
 
