@@ -62,5 +62,31 @@ Please see the wireframes shots below to give you an idea of the general site la
 
 - Sign Out form
 
+## User stories/planning
+
+I used Github's storyboard feature to assist me with the planning of this project, although, as with previous projects, I did need to add some stories while building the project to cater for additional features such as reviews, that I decieded to add after commencing work.
+
+![gift-den-user-stories](media/screenshots/gift-den-user-stories.png)
+
+## Models
+
+The project includes all Crud functionality as per requirements.
+
+The main models within the project are:
+
+Products consisting of:
+- Category
+- Product
+- Review 
+- Userprofile
+
+- The Review model is an addition to the Code Institute Boutique Ado walkthrough project, which I used to help me build this project.
+
+- I will also be ammending or possibly removing the rating field from the product model, as a user is unable to rate a project in it's current form and believe that the review model is more useful in this regard.
+
+- I also added a date of birth field to the Userprofile model as I believe this will be useful in terms of any age restricted products that may be sold on the store in the future.
+
+
+
 
 
