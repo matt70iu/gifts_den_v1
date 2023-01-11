@@ -301,6 +301,35 @@ I completed this test by doing the following:
 
 - I was also able to confim this by selecting the others category and could see that our test product was no longer displayed.
 
+## Filter products
+
+The expected result of this test will be that the user will be able to filter all products by Category and price.
+
+To conduct this test I did the following:
+
+![filter-all-products-by-price](media/screenshots/filter-all-products-by-price.png)
+
+- I clicked on the all products menu and selected by price.
+
+![price-lowest-to-highest](media/screenshots/price-lowest-to-highest.png)
+
+- I was then presented with a list of products from lowest price to highest price.
+
+![price-highest-to-lowest](media/screenshots/select-price-high-to-low.png)
+
+- I next selected price from high to low.
+
+![products-price-high-to-low](media/screenshots/products-price-high-to-low.png)
+
+- As expected I was presented with a list of all products listed from the highest price to the lowest price.
+
+- I repeated these steps for Category A-Z, Category Z-A, Name A-Z and Name Z-A and got the expected results.
+
+- I was also able to filter all individual categories which displayed to the user as expected.
+
+- I did not test the rating filtering, as I plan to refactor/remove this before submission.
+
+
 
 
 
