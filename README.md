@@ -86,7 +86,35 @@ Products consisting of:
 
 - I also added a date of birth field to the Userprofile model as I believe this will be useful in terms of any age restricted products that may be sold on the store in the future.
 
+## Gifts Den Marketing Strategy
+
+### PPC Advertising
+
+On launch, our new Ecommerce store is not likely to get a lot of organic search engine trafic due to the fact that it is a new site, and could take several weeks or even months to gain any sort of position in relevent meaningful search terns.
+
+To that end, I would like to target some longer tail, less competative keywords using PPC advertising.
+
+### Long Tail Keywords
+
+These long tail keywords would be product focused and I would like to bring the user directly to the page that their search is targeting.
+
+Take a product we currently sell such as headphones.
+
+If we were to target a keyword such as "buy headphones", this currently has search results in google ranging into the hundreds of millions, however, if we were to target a keyword such as "buy headphones with better battery life", this has search results in the 10 of millions, which would be much easier and cheaper to target using PPC.
+
+### Organic SEO optimisation
+
+I will be putting descriptive metatags and keywords into my base template in order to improve our organic search engine rankings, as per project requirements.
+
+Once I have all final sample products in place, I will also be creating sitemap, and robots.txt from it for the search engines and submitting as needed.
+
+### Newsletter
+
+We already have a newsletter sign up form set up on our store's homepage. As we drive traffic to our site, initially through our budgeted PPC campagn and later, through our growing organic search results, we can send out a monthly or as the store gorws, even a weekty newsletter to let our subscribers know about any special offers and seals, and drive even more traffic to the site.
+
 ## Features
+
+### Homepage
 
 On the home page the user can:
 
@@ -113,6 +141,60 @@ Assuming our user is a new customer
 ![registration-success](media/screenshots/register-success.png)
 
 - They will then be brought back to the homepage and presented with a success message confirming successful registration.
+
+- They will then need to confirm their email address via the email sent to the email address they registered.
+
+### Purchasing a product
+
+![login-in-page](media/screenshots/login-page-crednetials-entered.png)
+
+- Our newly created user, having confirmed their email address, will now be able to log into the store to make a purchase.
+
+![log-in-success-message](media/screenshots/login-success-new-registration.png)
+
+![select-headphones](media/screenshots/select-electrical.png)
+
+- Assuming our new user wanted to purchase some headphones, they would select electrical from the top nav bar and then select headphones.
+
+![headphones-filtered](media/screenshots/headphones-filtered.png)
+
+- The user is then presented with a filtered list of all headphones available.
+
+![headphones-product-detail](media/screenshots/headphones-product-detail.png)
+
+- Our user wishes to purchase the first set of headphones, selects them and is then presented with the product detail page.
+
+![headphones-added-to-bag](media/screenshots/headphones-add-to-bag-success.png)
+
+- Once the user has selected the correct quantity and clicked add to bag, they will be greeted with a confirmation message confirming the headphones have been added to their shopping bag successfully.
+
+![headphones-checkout-prepopulated](media/screenshots/headphones-checkout-prepopulated.png)
+
+- Asuming this is the only item they wish to purchase, they will then click on go to checkout and be presented with the checkout screen, with the majaority of their registeration information already filled out on the page.
+
+![tick-profile-box](media/screenshots/profile-tick-box.png)
+
+- They will also have the option to select a tick box in case they wish to change any of their user profile information.
+
+- They will then add their payment information and click on complete order.
+
+![order-success-page](media/screenshots/order-success-headphones.png)
+
+![confirmation-email](media/screenshots/confirmation-email-gmailpng.png)
+
+- They will then be presented with an order success page and sent a confirmation email to confirm their order was processed successfully.
+
+- The order process will differ slightly depending on weather the user is registered.
+
+![register-or-login](media/screenshots/create-account-or-login.png)
+
+- If the user is not registered, they will need to fill out all their information in the checkout page, and if they they wish to register, they can simply select, create account, or login and will be brought to the registeration or login page and can then continue with their purchase. 
+
+
+
+
+
+
 
 
 
