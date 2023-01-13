@@ -188,7 +188,40 @@ Assuming our user is a new customer
 
 ![register-or-login](media/screenshots/create-account-or-login.png)
 
-- If the user is not registered, they will need to fill out all their information in the checkout page, and if they they wish to register, they can simply select, create account, or login and will be brought to the registeration or login page and can then continue with their purchase. 
+- If the user is not registered, they will need to fill out all their information in the checkout page, and if they they wish to register, they can simply select, create account, or login and will be brought to the registeration or login page and can then continue with their purchase.
+
+## Profile Registration
+
+![select-register](media/screenshots/select-register.png)
+
+![create-account](media/screenshots/create-account-or-login.png)
+
+- As Illustrated above, a user can either select register from the account menu or choose to go to the registration page from the checkout when making a purchase.
+
+![registration-screen-1](media/screenshots/registration-screen-1.png)
+
+![registration-screen-2](media/screenshots/registration-screen-2png.png)
+
+- They will then fill out the registration form and select sign up.
+
+![registration-success](media/screenshots/register-success.png)
+
+- They will then be brought back to the homepage with a message confirming they have been registered successfully.
+
+### Editing user profile
+
+![click-on-profile](media/screenshots/click-on-profilepng.png)
+
+![edit-profile-information](media/screenshots/edit-profile-information.png)
+
+- To edit their profile information, once logged in, the user can select the my profile option from the my account menu which will bring up their prfile page.
+
+- They are then free to edit any of their info that they wish and update it by clicking the update information button.
+
+![profile-edit-success](media/screenshots/profile-edit-test.png)
+
+- Their information will then be updated, and they will be greeted with a success message confirming this.
+
 
 
 
