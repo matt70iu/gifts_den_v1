@@ -222,6 +222,61 @@ Assuming our user is a new customer
 
 - Their information will then be updated, and they will be greeted with a success message confirming this.
 
+## Add/edit/delete a product 
+
+- For convenience sake, store owners/administrators can also add or edit a product from their my account menu.
+
+- It is worth noting however, that they must be set up as a superuser in order to do so.
+
+![select-add-product](media/screenshots/select-product-management.png)
+
+- First, our user must select product management from the my account menu.
+
+![product-management-screen-1](media/screenshots/product-management-screen-1.png)
+
+![product-management-screen-2](media/screenshots/product-management-screen-2.png)
+
+- They will then be presented with the product management screen.
+
+- They can then add a product to the store, by filling out the product details and selecting add product.
+
+![prouduct-added-success](media/screenshots/product-added-success-1.png)
+
+- They will then be brought to the product detail page for the new product, while being greeted with a success message, confirming the product has been added successfully.
+
+![select-edit-product](media/screenshots/select-edit-delete-product.png)
+
+- Our user can also edit or delete a product by selecting the relevent option from the product detail screen.
+
+![edit-product-screen](media/screenshots/product-edit-screen.png)
+
+- When editing a product, they will are presented with the prepopulated product screen and cen then edit any product details they need to.
+
+![edit-product-success](media/screenshots/update-product-success.png)
+
+- They will then click update product and will then see a message confiring the product has been edited successfully.
+
+![select-delete-product](media/screenshots/select-edit-delete-product.png)
+
+- To delete a product, they will simply select delete product from the product detail page of the product they wish to delete.
+
+![product-deleted-success](media/screenshots/product-deleted-success.png)
+
+- Again, a success message will then confirm successful product deletion and the user will be brought back to the all products page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
