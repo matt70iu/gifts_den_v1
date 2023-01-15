@@ -264,6 +264,42 @@ Assuming our user is a new customer
 
 - Again, a success message will then confirm successful product deletion and the user will be brought back to the all products page.
 
+### Filtering products by category
+
+Products within the store can also be filtered by price, category or name, in forward or reverse order.
+
+![select-electrical](media/screenshots/select-electrical.png)
+
+- As an example, our user selects electrical and then headphones.
+
+![headphones-filtered](media/screenshots/headphones-filtered.png)
+
+- They are then greeted with a filtered list of products containing all headphones.
+
+![headphones-high-t0-low](media/screenshots/headphones-price-high-to-low.png)
+
+- A user can then filter them by price from high to low from the dropdown list.
+
+![headphones-price-low-to-high](media/screenshots/headphones-priice-low-to-high.png)
+
+- Price low to high
+
+![headphones-name-a-to-z](media/screenshots/headphones-name-a-to-z.png)
+
+- Name A to Z
+
+![headphones-name-z-to-a](media/screenshots/headphones-name-z-to-a.png)
+
+- Name Z to A
+
+- This will drastically improve user experience enabling them to find the product they're looking for much quicker.
+
+
+
+
+
+
+
 
 
 
