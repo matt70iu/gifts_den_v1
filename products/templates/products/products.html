@@ -31,18 +31,14 @@
                                 (low to high)</option>
                             <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
                                 (high to low)</option>
-                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
-                                Rating (low to high)</option>
-                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
-                                Rating (high to low)</option>
                             <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
                                 (A-Z)</option>
                             <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
                                 (Z-A)</option>
-                            <option value="Category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                            <option value="Category_asc" {% if current_sorting == 'Category_asc' %}selected{% endif %}>
                                 Category (A-Z)</option>
                             <option value="Category_desc"
-                                {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                                {% if current_sorting == 'Category_desc' %}selected{% endif %}>Category (Z-A)</option>
                         </select>
                     </div>
                 </div>
@@ -85,15 +81,9 @@
                                         </a>
                                     </p>
                                     {% endif %}
-                                    {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                        5</small>
-                                    {% else %}
-                                    <small class="text-muted">No Rating</small>
-                                    {% endif %}
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
-                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
@@ -137,8 +127,8 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
     })
 </script>
 

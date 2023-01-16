@@ -10,7 +10,6 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'Category',
         'price',
-        'rating',
         'image',
     )
 
@@ -22,7 +21,8 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
-    
+
+
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
         'product',
@@ -34,6 +34,3 @@ class ReviewAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Review, ReviewAdmin)
-
-
-
