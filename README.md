@@ -286,6 +286,14 @@ Products within the store can also be filtered by price, category or name, in fo
 
 ![headphones-name-a-to-z](media/screenshots/headphones-name-a-to-z.png)
 
+![headphones-category-a-to-z](media/screenshots/headphones-category-a-to-z.png)
+
+- Category A to Z
+
+![headphones-category-z-to-a](media/screenshots/headphones-category-z-to-a.png)
+
+- Category Z to A
+
 - Name A to Z
 
 ![headphones-name-z-to-a](media/screenshots/headphones-name-z-to-a.png)
@@ -293,6 +301,39 @@ Products within the store can also be filtered by price, category or name, in fo
 - Name Z to A
 
 - This will drastically improve user experience enabling them to find the product they're looking for much quicker.
+
+### Features for future implementation
+
+- Would like to reintroduce the ratings system, but integrated with the the reviews feature. As it previously stood, ratings could not be altered by the user, hense I felt it was better to remove it for now.
+
+- A contact us page form would be useful to both user and administrator, saving the need for the user to send an email. 
+
+## Technologies used
+
+- Python
+
+- Django
+
+- HTML
+
+- CSS
+
+- Javascript
+
+- Gitpod (to build project)
+
+- Heroku, Githib and Amazon S3 (for deployment)
+
+- Microsoft visual studio code (to work on project while offline)
+
+## Testing
+
+I have completed a seperate test file [here](TESTING.md) which goes through all manual testing completed for this project.
+
+### Validator testing
+
+
+
 
 
 
