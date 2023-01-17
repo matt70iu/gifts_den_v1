@@ -112,6 +112,20 @@ Once I have all final sample products in place, I will also be creating sitemap,
 
 We already have a newsletter sign up form set up on our store's homepage. As we drive traffic to our site, initially through our budgeted PPC campagn and later, through our growing organic search results, we can send out a monthly or as the store gorws, even a weekty newsletter to let our subscribers know about any special offers and seals, and drive even more traffic to the site.
 
+### Facebook page (mockup)
+
+![gifts-den-facebook-1](media/screenshots/gifts-den-facebook-1.png)
+
+![gifts-den-facebook-2](media/screenshots/gifts-den-facebook-2.png)
+
+- As I don't use faceboom personally, I set up an account for gifts den and took screenshots of the page created.
+
+- This represents a rough idea of the sort of page I would create for a live setting.
+
+- In a real world example, facebook is a fantastic marketing tool for building followers and therefor driving traffic to the store.
+
+
+
 ## Features
 
 ### Homepage
