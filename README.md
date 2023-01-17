@@ -330,7 +330,7 @@ Products within the store can also be filtered by price, category or name, in fo
 
 I have completed a seperate test file [here](TESTING.md) which goes through all manual testing completed for this project.
 
-### Validator testing
+### Validator testing (Python)
 
 #### Main Gifts Den app:
 
@@ -459,6 +459,164 @@ I have completed a seperate test file [here](TESTING.md) which goes through all 
 ![profiles-views-py](media/screenshots/validator-screenshots/profiles-views-py.png)
 
 - views.py
+
+### Validator testing (HTML)
+
+![homepage-html-1](media/screenshots/validator-screenshots/home-page-html.png)
+
+![homepage-html-2](media/screenshots/validator-screenshots/home-page-html-2.png)
+
+- Homepage
+
+- All li elements are listed within a ul, therefore errors are not valid.
+
+![products-page-1](media/screenshots/validator-screenshots/products-html-1.png)
+
+![products-html-2](media/screenshots/validator-screenshots/products-html-2.png)
+
+- Products 
+
+- All li elements are listed within a ul, therefore errors are not valid.
+
+![add-product-html-1](media/screenshots/validator-screenshots/add-product-html-1.png)
+
+![add-product-html-2](media/screenshots/validator-screenshots/add-product-html-2.png)
+
+- Add product
+
+- All li elements are listed within a ul.
+
+![profile-html-1](media/screenshots/validator-screenshots/profile-html-1.png)
+
+![profile-html-2](media/screenshots/validator-screenshots/profile-html-2.png)
+
+- Profile 
+
+- All li elements are listed within a ul, therefore errors are not valid.
+
+![product-detail-html-1](media/screenshots/validator-screenshots/product-detail-html-1.png)
+
+![product-detail-html-2](media/screenshots/validator-screenshots/product-detail-html-2.png)
+
+- Product detail
+
+- All li elements are listed within a ul.
+
+![bag-html-1](media/screenshots/validator-screenshots/bag-html-1.png)
+
+![bag-html-2](media/screenshots/validator-screenshots/bag-html-2.png)
+
+- bag
+
+- All li elements are listed within a ul.
+
+![checkout-html-1](media/screenshots/validator-screenshots/checkout-html-1.png)
+
+![checkout-html-2](media/screenshots/validator-screenshots/checkout-html-2.png)
+
+- checkout
+
+- All li elements are listed within a ul.
+
+![checkout-success-html-1](media/screenshots/validator-screenshots/checkout-success-html-1.png)
+
+![checkout-success-html-2](media/screenshots/validator-screenshots/products-html-2.png)
+
+- checkout success
+
+- All li elements are listed within a ul.
+
+![password-reset-html-1](media/screenshots/validator-screenshots/password-reset-html-1.png)
+
+![password-reset-html-2](media/screenshots/validator-screenshots/password-reset-html-2.png)
+
+- password reset
+
+- All li elements are listed within a ul.
+
+![password-reset-done-html-1](media/screenshots/validator-screenshots/password-reset-done-html-1.png)
+
+![password-reset-done-html-2](media/screenshots/validator-screenshots/password-reset-done-html-2.png)
+
+- passowrd reset done
+
+- All li elements are listed within a ul.
+
+
+## Deployment
+
+Setting up a new repository on Github:
+1. Log into Github.
+2. In my case, I wanted to build the repository using the one of code institute's templates.
+3. Within the relevent repository I selected "use this template".
+4. Git hub then created the new repository, which could later be linked into Heroku for deployment.
+
+
+The app was deployed to Heroku via Github. The steps to deploy are as follows:
+
+1. Log into Horku and select "new" and then select "Create new app".
+2. Select an app name and region and select "create app".
+3. Select your newly created app from your dashboard and click the settings tab.
+4. Add any config Vars or build packs needed for app, in this case, PORT 8000 config vars and Python and nodejs for  build packs, remembering to ensure Python is your first build pack.
+5. Click the "Deploy" tab and under "Deployment Method" select "Github Pages".
+6. Log into Github and select correct repository to connect to app.
+7. For convenience, I selected "Automatic Deploys" so the app is updated automatically after each push from Gitpod/Visual Studio code.
+
+Making a local clone:
+
+1. Login to gitbub and download github desktop.
+2. Select the correct repository from the dropdown list in the top left.
+3. Secect the 'repository' menu and from it select 'pull'.
+4. Select 'open in visual studio code' from the home screen.
+5. The repository can now be worked on locally, without the need to use gitpod etc.
+
+Forking the repository:
+
+1. Login to Gitbut and select the relevent repository.
+2. At the top the the repository (not page), select settings.
+3. Then select fork. I am currently not able to fork the repository as I own it, but this this the procedure one would normally follow.
+
+
+## Libraries/Resources used
+
+- Bootstrap was used to build the main navbar and site navigation contained in base.html, as well as for the buttons being useed for form submission.
+
+- I then customised this using bootstrap, combined with additional css.
+
+- All products are original and were added using a json backup file, which was created to make some model changes without having to input all products again.
+
+- The homepage image was sourced from pixabay.com
+
+- Product images were sourced from pixlr.com
+
+## Credits
+
+- ### [codeinstitute.net](https://codeinstitute.net) (Boutique Ado Walkthrough Project)
+
+- I used the Boutique ado walkthrough project within the E-commerce module of the couse to assist me when building this project.
+
+- I then customised the models, html and css to suit my gifts den project.
+
+- I decieded to use this as the guide for the project, as I liked the look and style of the store when completing the walkthough project and wanted to build something similar but customised for my own E-commerce store.
+
+- ### [Codemy.com](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) (Used to assist when building reviews model)
+
+
+- From this playlist I used video's [#33 Build-a-blog-comments-section](https://www.youtube.com/watch?v=hZrlh4qU4eQ) and [#34 Post-blog-comments](https://www.youtube.com/watch?v=OuOB9ADT_bo) and then customised it, to assist me when building the reviews section for my store.
+
+- [Slackoverflow.com](https://stackoverflow.com)
+
+- As with previous projects, slack overfow proved extremely useful when trying to troubleshoot those yellow django error pages!
+
+### Acknowledgements
+
+- My Mentor Dario for his help, advise and patience.
+- The various totors at code institute for their help and patience in helping me build this project.
+- The youtubers and slackoverflowers who take the time to create the videos, wrtite the articles and answer the questions. Without you all, newbies like me, really would be lost.
+
+
+
+
 
 
 
