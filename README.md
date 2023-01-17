@@ -332,6 +332,142 @@ I have completed a seperate test file [here](TESTING.md) which goes through all 
 
 ### Validator testing
 
+#### Main Gifts Den app:
+
+![gifts-den-urls.py](media/screenshots/validator-screenshots/gifts-den-urls.py.png)
+
+- urls.py
+
+![gifts-den-views.py](media/screenshots/validator-screenshots/gifts-den-views.py.png)
+
+- views.py
+
+#### Home app:
+
+![home-apps.py](media/screenshots/validator-screenshots/home-apps-py.png)
+
+- app.py
+
+![home-views.py](media/screenshots/validator-screenshots/home-view-py.png)
+
+- views.py
+
+#### Bag app:
+
+![bag-apps.py](media/screenshots/validator-screenshots/bag-app-py.png)
+
+- apps.py
+
+![bag-contexts.py](media/screenshots/validator-screenshots/bag-contexts-pypng.png)
+
+- contexts.py
+
+![bag-urls.py](media/screenshots/validator-screenshots/bag-urls-py.png)
+
+- urls.py
+
+![bag-views.py](media/screenshots/validator-screenshots/bag-view-py.png)
+
+- views.py
+
+#### Checkout app:
+
+![checkout-admin.py](media/screenshots/validator-screenshots/checkout-admin-py.png)
+
+- admin.py
+
+![checkout-apps-py](media/screenshots/validator-screenshots/checkout-apps-py.png)
+
+- apps.py
+
+![checkout-forms-py](media/screenshots/validator-screenshots/checkout-forms-py.png)
+
+- forms.py
+
+![checkout-models-py](media/screenshots/validator-screenshots/checkout-models-py.png)
+
+- models.py
+
+![checkout-signals-py](media/screenshots/validator-screenshots/checkout-signals-py.png)
+
+- signals.py
+
+![checkout-urls.py](media/screenshots/validator-screenshots/checkout-urls-py.png)
+
+- urls.py
+
+![checkout-views.py](media/screenshots/validator-screenshots/checkout-views-pypng.png)
+
+- views.py
+
+![checkout-webhook-handler.py](media/screenshots/validator-screenshots/checkout-webhook-handler-py.png)
+
+- webhookhandler.py
+
+![checkout-webhooks.py](media/screenshots/validator-screenshots/checkout-webhooks-py.png)
+
+- webhooks.py
+
+#### Products app:
+
+![products-admin-py](media/screenshots/validator-screenshots/products-admin-py.png)
+
+- admin.py
+
+![produvts-app-py](media/screenshots/validator-screenshots/products-app-py.png)
+
+- apps.py
+
+![products-forms-py](media/screenshots/validator-screenshots/products-forms-py.png)
+
+- forms.py
+
+![products-models-py](media/screenshots/validator-screenshots/products-models-py.png)
+
+- models.py
+
+![products-urls.py](media/screenshots/validator-screenshots/products-urls-py.png)
+
+- urls.py
+
+![products-views-py](media/screenshots/validator-screenshots/products-view-py.png)
+
+- views.py
+
+![products-widgets-py](media/screenshots/validator-screenshots/products-widgets-py.png)
+
+- Widgets.py
+
+#### Profiles app:
+
+![profiles-apps-py](media/screenshots/validator-screenshots/profiles-apps-py.png)
+
+- apps.py
+
+![profiles-forms-py](media/screenshots/validator-screenshots/profiles-forms-py.png)
+
+- forms.py
+
+![profiles-models-py](media/screenshots/validator-screenshots/profiles-models-py.png)
+
+- models.py
+
+![profiles-urls.py](media/screenshots/validator-screenshots/profiles-urls-py.png)
+
+- urls.py
+
+![profiles-views-py](media/screenshots/validator-screenshots/profiles-views-py.png)
+
+- views.py
+
+
+
+
+
+
+
+
+
 
 
 
