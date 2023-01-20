@@ -88,6 +88,12 @@ Products consisting of:
 
 ## Gifts Den Marketing Strategy
 
+### Target buyer
+
+As this is an ecommerce store, aimed towaerds the general public, we will be utilising a B to C (business to consumer) model.
+
+Although the store could also be selling to compenies through the form of corporate gifts etc, so although our overall market is going to be the general consumer, I would also want to ensure that we were in a position to utilise any B to B (business to business) opportunities that may arise.
+
 ### PPC Advertising
 
 On launch, our new Ecommerce store is not likely to get a lot of organic search engine trafic due to the fact that it is a new site, and could take several weeks or even months to gain any sort of position in relevent meaningful search terns.
