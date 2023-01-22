@@ -1,6 +1,8 @@
 # Gifts Den
 
-Gits den aims to be the one stop shop for all the gifts you need, for those special people in your life!
+[Live site can be found here](https://e-commerce-p5-v1.herokuapp.com/)
+
+Gifts den aims to be the one stop shop for all the gifts you need, for those special people in your life!
 
 The wide scope name of the store was very much deliberate, in the sense that it gives potentially limitless rooms for expansion in the future, both in terms of prodct range and store size.
 
@@ -608,6 +610,12 @@ Forking the repository:
 - The homepage image was sourced from pixabay.com
 
 - Product images were sourced from pixlr.com
+
+## Bug fixes
+
+- A bug with the category dropdown box not filtering correctly was fixed by capitalising the c in category to uppercase as per the product model. I though it best to do this rather than change the model, which could cause other bigger problems.
+
+- The quantity button in the product detail page was allowing a negative quantity on larger screen sizes. This was fixed by adding an id to the template and refactoring the javascript to incorporate the id. I used the Boutique Ado walkthrough project source code to assist me with this.
 
 ## Credits
 
