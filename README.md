@@ -4,7 +4,7 @@
 
 Gifts den aims to be the one stop shop for all the gifts you need, for those special people in your life!
 
-The wide scope name of the store was very much deliberate, in the sense that it gives potentially limitless rooms for expansion in the future, both in terms of prodct range and store size.
+The wide scope name of the store was very much deliberate, in the sense that it gives potentially limitless room for expansion in the future, both in terms of product range and store size.
 
 When building the store, I started off with some clothing, electrical and living style products, with the intension of expanding this in the future.
 
@@ -94,7 +94,7 @@ Products consisting of:
 
 As this is an ecommerce store, aimed towaerds the general public, we will be utilising a B to C (business to consumer) model.
 
-Although the store could also be selling to compenies through the form of corporate gifts etc, so although our overall market is going to be the general consumer, I would also want to ensure that we were in a position to utilise any B to B (business to business) opportunities that may arise.
+Although the store could also be selling to compenies in the form of corporate gifts etc, so although our overall market is going to be the general consumer, I would also want to ensure that we were in a position to utilise any B to B (business to business) opportunities that may arise.
 
 ### PPC Advertising
 
@@ -118,7 +118,7 @@ Once I have all final sample products in place, I will also be creating sitemap,
 
 ### Newsletter
 
-We already have a newsletter sign up form set up on our store's homepage. As we drive traffic to our site, initially through our budgeted PPC campagn and later, through our growing organic search results, we can send out a monthly or as the store gorws, even a weekty newsletter to let our subscribers know about any special offers and seals, and drive even more traffic to the site.
+We already have a newsletter sign up form set up on our store's homepage. As we drive traffic to our site, initially through our budgeted PPC campagn and later, through our growing organic search results, we can send out a monthly or as the store gorws, even a weekty newsletter to let our subscribers know about any special offers and deals, and drive even more traffic to the site.
 
 ### Facebook page (mockup)
 
@@ -130,7 +130,7 @@ We already have a newsletter sign up form set up on our store's homepage. As we 
 
 - This represents a rough idea of the sort of page I would create for a live setting.
 
-- In a real world example, facebook is a fantastic marketing tool for building followers and therefor driving traffic to the store.
+- In a real world example, facebook is a fantastic marketing tool for building followers and there for driving traffic to the store.
 
 
 
@@ -145,6 +145,7 @@ On the home page the user can:
 - Search the site
 - Login/out or register
 - Select some products to view from the the top navbar or from the shop now button
+- Sign up to our newsletter.
 
 Assuming our user is a new customer
 
@@ -164,7 +165,7 @@ Assuming our user is a new customer
 
 - They will then be brought back to the homepage and presented with a success message confirming successful registration.
 
-- They will then need to confirm their email address via the email sent to the email address they registered.
+- They will then need to confirm their email address via the email sent to the email address they provided during registeration.
 
 ### Purchasing a product
 
