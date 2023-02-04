@@ -1,7 +1,10 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+from django.views.generic import CreateView
+from django.core.mail import send_mail
+from django.urls import reverse_lazy, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile
+from .models import UserProfile, ContactUsForm
 from .forms import UserProfileForm
 
 from checkout.models import Order
@@ -50,3 +53,23 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+class ContactFormView(CreateView):
+    model = ContactUsForm
+    template_name = 'contact_form.html'
+    fields = '__all__'
+    success_url = reverse_lazy('home')
+
+    def form_valid(self, form):
+        name = form.cleaned_data['name']
+        email = form.cleaned_data['email']
+        subject = form.cleaned_data['subject']
+        message = form.cleaned_data['message']
+        send_mail(
+            'subject', message, email, ['admin@giftsden.com'],
+            fail_silently=False,
+        )
+        messages.add_message(self.request, messages.INFO,
+                             'Thankyou for you email, we will be in touch soon.')
+        return super().form_valid(form)

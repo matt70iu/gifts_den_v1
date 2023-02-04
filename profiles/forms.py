@@ -1,5 +1,6 @@
 from django import forms
-from .models import UserProfile
+from .models import UserProfile, ContactUsForm
+from django.core.mail import send_mail
 
 
 class UserProfileForm(forms.ModelForm):
@@ -33,3 +34,22 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-red rounded-0 profile-form-input'
             self.fields[field].label = False
+
+
+class ContactUsForm(forms.ModelForm):
+    '''Add email form'''
+    class Meta:
+        ''' Add email fields'''
+        model = ContactUsForm
+        fields = ('name', 'email', 'subject', 'message')
+
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.Textarea(attrs={'class': 'form-control'}),
+            'subject': forms.TextInput(attrs={'class': 'form-control'}),
+            'message': forms.Textarea(attrs={'class': 'form-control'}),
+        }
+        
+        def send_email(self):
+        # send email using the self.cleaned_data dictionary
+            pass
