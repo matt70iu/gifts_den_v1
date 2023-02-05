@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views import View
 from django.views.generic import CreateView
 from django.urls import reverse_lazy, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Review
+from .models import Product, Category, Review, Wishlist
 
 from .forms import ProductForm, ReviewForm
 
@@ -160,3 +161,47 @@ class Add_Review_View(CreateView):
         return super().form_valid(form)
 
     success_url = reverse_lazy('home')
+
+
+def view_wishlist(request):
+    """ A view that renders the bag contents page """
+
+    return render(request, 'products/wish_list.html')
+
+    def add_to_wishlist(request, item_id):
+        """ Add a quantity of the specified product to the wish list """
+
+        product = get_object_or_404(Product, pk=item_id)
+        quantity = int(request.POST.get('quantity'))
+        redirect_url = request.POST.get('redirect_url')
+        size = None
+        if 'product_size' in request.POST:
+            size = request.POST['product_size']
+        bag = request.session.get('bag', {})
+
+        if size:
+            if item_id in list(bag.keys()):
+                if size in wishlist[item_id]['items_by_size'].keys():
+                    wishlist[item_id]['items_by_size'][size] += quantity
+                    messages.success(
+                        request, f'Updated size {size.upper()} {product.name} quantity to {wishlist[item_id]["items_by_size"][size]}')
+                else:
+                    wishlist[item_id]['items_by_size'][size] = quantity
+                    messages.success(
+                        request, f'Added size{size.upper()} {product.name} to your wishlist')
+            else:
+                wishlist[item_id] = {'items_by_size': {size: quantity}}
+                messages.success(
+                    request, f'Added size{size.upper()} {product.name} to your wishlist')
+        else:
+            if item_id in list(wishlist.keys()):
+                wishlist[item_id] += quantity
+                messages.success(
+                    request, f'Updated {product.name} quantity to {wishlist[item_id]}')
+            else:
+                wishlist[item_id] = quantity
+                messages.success(
+                    request, f'Added {product.name} to your wishlist')
+
+        request.session['wishlist'] = wishlist
+        return redirect(redirect_url)
