@@ -7,6 +7,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Review
+from django.http import HttpResponseRedirect
+from profiles.models import UserProfile
 
 from .forms import ProductForm, ReviewForm
 
@@ -161,3 +163,9 @@ class Add_Review_View(CreateView):
         return super().form_valid(form)
 
     success_url = reverse_lazy('home')
+    
+
+def Like_Product_View(request, product_id):
+    product = get_object_or_404(Product, id=request.POST.get('product_id'))
+    product.likes.add(request.user.userprofile)
+    return HttpResponseRedirect(reverse('product_detail', args=[str(product.id)]))

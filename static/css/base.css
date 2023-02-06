@@ -8,6 +8,8 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    position: relative;
+
 }
 
 
@@ -275,6 +277,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+#product-details-container {
+    overflow-x: hidden;
+}
+
+
 /* Mail chimp*/
 #mc_embed_signup {
     background: red;
@@ -335,6 +342,10 @@ input[name='q']::placeholder {
     font-size: 1rem;
 }
 
+#delivery-banner h4 {	
+    font-size: .9rem;	
+}
+
 .btn.btn-outline-red.rounded-0,
 .btn.btn-red.rounded-0 {
     padding: .375rem .375rem;
@@ -355,5 +366,5 @@ input[name='q']::placeholder {
 .review-list {
     height: 200px;
     width: 600px;
-    overflow: scroll;
+    overflow: hidden;
 }
