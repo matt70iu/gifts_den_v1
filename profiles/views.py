@@ -67,7 +67,7 @@ class ContactFormView(CreateView):
         subject = form.cleaned_data['subject']
         message = form.cleaned_data['message']
         send_mail(
-            'subject', message, email, ['admin@giftsden.com'],
+            'subject', message, email, ['giftsden@gmail.com'],
             fail_silently=False,
         )
         messages.add_message(self.request, messages.INFO,

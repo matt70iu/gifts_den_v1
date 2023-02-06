@@ -72,9 +72,12 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    likes = product.likes.all()
+    total_likes = product.total_likes()
 
     context = {
         'product': product,
+        'total_likes': total_likes,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -163,7 +166,7 @@ class Add_Review_View(CreateView):
         return super().form_valid(form)
 
     success_url = reverse_lazy('home')
-    
+
 
 def Like_Product_View(request, product_id):
     product = get_object_or_404(Product, id=request.POST.get('product_id'))
