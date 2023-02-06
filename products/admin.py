@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Review, Wishlist
+from .models import Product, Category, Review
 
 # Register your models here.
 
@@ -29,16 +29,9 @@ class ReviewAdmin(admin.ModelAdmin):
         'name',
         'body',
     )
-    
-class WishlistAdmin(admin.ModelAdmin):
-    list_display = (
-        'user',
-        'product',
-        'added_on',
-    )
+
 
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Review, ReviewAdmin)
-admin.site.register(Wishlist, WishlistAdmin)

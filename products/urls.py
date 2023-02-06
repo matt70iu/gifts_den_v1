@@ -9,7 +9,6 @@ urlpatterns = [
     path('delete/<int:product_id>/', views.delete_product, name='delete_product'),
     path('add/<int:product_id>/review/',
          views.Add_Review_View.as_view(), name='add_review'),
-    path('wishlist', views.view_wishlist, name='wish_list'),
 
 
 ]

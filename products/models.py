@@ -42,12 +42,3 @@ class Review(models.Model):
 
     def __str__(self):
         return '%s - %s' % (self.product.name, self.name)
-
-
-class Wishlist(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    added_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return (self.product.name, self.name)
