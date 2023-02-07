@@ -48,7 +48,13 @@
                 <h4>Reviews</h4><h4>Tell us what you think!</h4>
                 <form action="{% url 'like_product' product.pk %}" method="POST">
                     {% csrf_token %}
-                    <button type="submit" name="product_id" value="{{ product.id }}" class="btn btn-red">Like</button> - {{ total_likes }}
+
+                    {% if has_likes %}
+                        <button type="submit" name="product_id" value="{{ product.id }}" class="btn btn-red">unlike</button> - number of likes
+                        {% else %} 
+                        <button type="submit" name="product_id" value="{{ product.id }}" class="btn btn-red">Like</button> - number of likes
+                    {% endif %}
+                    {{ total_likes }}
                 </form>
                 <br>
                 <a href="{% url 'add_review' product.pk %}">Add Review</a>

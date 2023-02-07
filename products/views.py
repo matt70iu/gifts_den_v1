@@ -80,6 +80,12 @@ def product_detail(request, product_id):
         'total_likes': total_likes,
     }
 
+    if total_likes >= 1:
+        context['has_likes'] = True
+
+    else:
+        context['has_likes'] = False
+
     return render(request, 'products/product_detail.html', context)
 
 
@@ -170,5 +176,10 @@ class Add_Review_View(CreateView):
 
 def Like_Product_View(request, product_id):
     product = get_object_or_404(Product, id=request.POST.get('product_id'))
-    product.likes.add(request.user.userprofile)
+    profile = request.user.userprofile
+    likes = product.likes.all()
+    if likes.filter(user=request.user).exists():
+        product.likes.remove(profile)
+    else:
+        product.likes.add(profile)
     return HttpResponseRedirect(reverse('product_detail', args=[str(product.id)]))
