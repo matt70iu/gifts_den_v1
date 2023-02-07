@@ -46,9 +46,9 @@
                 <p class="mt-3">{{ product.description }}</p>
 
                 <h4>Reviews</h4><h4>Tell us what you think!</h4>
+                {% if user.is_authenticated %}
                 <form action="{% url 'like_product' product.pk %}" method="POST">
                     {% csrf_token %}
-
                     {% if has_likes %}
                         <button type="submit" name="product_id" value="{{ product.id }}" class="btn btn-red">unlike</button> - number of likes
                         {% else %} 
@@ -57,6 +57,7 @@
                     {{ total_likes }}
                 </form>
                 <br>
+                    {% endif %}
                 <a href="{% url 'add_review' product.pk %}">Add Review</a>
 
                 <hr>
