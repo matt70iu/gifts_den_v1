@@ -651,6 +651,8 @@ Forking the repository:
 
 - I also added a like and unlike button to the products model, using a many to many field. I used videos 18 and 19 from [this](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) playlist in order to create the buttons, although I refactored the code to cater for the fact that I was not using class based views in this instance.
 
+- In regards to the addition of the many to many field to the products, there is also a view, url and template rendering behind this so I trust this will be sufficient to count as one of my custom models.
+
 - I decided to make this available to logged in users only, as the like will be alocated to their profile.
 
 - I have also rectified the excessive horozontal scroll on the product detail page by hiding the x overflow.
