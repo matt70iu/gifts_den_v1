@@ -174,6 +174,7 @@ class Add_Review_View(CreateView):
     success_url = reverse_lazy('home')
 
 
+@login_required
 def Like_Product_View(request, product_id):
     product = get_object_or_404(Product, id=request.POST.get('product_id'))
     profile = request.user.userprofile
